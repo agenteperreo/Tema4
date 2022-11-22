@@ -27,11 +27,11 @@ public class Ejercicio3 {
 		// Pedimos que quiere que mostremos
 		opcion = sc.nextInt();
 
-		//si la opcion es 1 o 2
-		if (opcion==1 || opcion==2) {
+		// si la opcion es 1 o 2
+		if (opcion == 1 || opcion == 2) {
 			// Llamamos a la funcion cilindro
 			cilindro(opcion, radio, altura);
-		} else { //Si no
+		} else { // Si no
 			System.err.println("ERROR: Opción no valida"); // Mostramos un mensaje de error
 		}
 
