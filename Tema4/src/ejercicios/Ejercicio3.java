@@ -27,8 +27,13 @@ public class Ejercicio3 {
 		// Pedimos que quiere que mostremos
 		opcion = sc.nextInt();
 
-		// Llamamos a la funcion cilindro
-		cilindro(opcion, radio, altura);
+		//si la opcion es 1 o 2
+		if (opcion==1 || opcion==2) {
+			// Llamamos a la funcion cilindro
+			cilindro(opcion, radio, altura);
+		} else { //Si no
+			System.err.println("ERROR: Opción no valida"); // Mostramos un mensaje de error
+		}
 
 		// Cerramos el escaner
 		sc.close();
@@ -50,8 +55,6 @@ public class Ejercicio3 {
 			// Mostramos el volumen
 			System.out.printf("El volumen del cilindro es %.2fcm3", volumen);
 		}
-		default -> // Si e otra opción
-			System.err.println("ERROR: Opción no valida"); // Mostramos un mensaje de error
 		}
 	}
 
