@@ -27,33 +27,32 @@ public class Ejercicio3 {
 		// Pedimos que quiere que mostremos
 		opcion = sc.nextInt();
 
-		// Dependiendo de la opción
-		switch (opcion) {
-		case 1 -> // Si la opcion es 1
-			area(radio, altura); // Llamamos a la función area
-		case 2 -> // Si la opción es 2
-			volumen(radio, altura); // Llamamos a la función volumen
-		default -> // Si e otra opción
-			System.err.println("ERROR: Opción no valida"); // Mostramos un mensaje de error
-		}
+		// Llamamos a la funcion cilindro
+		cilindro(opcion, radio, altura);
 
 		// Cerramos el escaner
 		sc.close();
 
 	}
 
-	static void area(int radio, int altura) {
-		// Calculamos el area
-		double area = 2 * Math.PI * radio * (altura + radio);
-		// Mostramos el area
-		System.out.printf("El area del cilindro es %.2fcm2", area);
-	}
-
-	static void volumen(int radio, int altura) {
-		// Calculamos el volumen
-		double volumen = Math.PI * radio * radio * altura;
-		// Mostramos el volumen
-		System.out.printf("El volumen del cilindro es %.2fcm3", volumen);
+	static void cilindro(int opc, int radio, int altura) {
+		// Dependiendo de la opción
+		switch (opc) {
+		case 1 -> {// Si la opcion es 1
+			// Calculamos el area
+			double area = 2 * Math.PI * radio * (altura + radio);
+			// Mostramos el area
+			System.out.printf("El area del cilindro es %.2fcm2", area);
+		}
+		case 2 -> {// Si la opción es 2
+			// Calculamos el volumen
+			double volumen = Math.PI * radio * radio * altura;
+			// Mostramos el volumen
+			System.out.printf("El volumen del cilindro es %.2fcm3", volumen);
+		}
+		default -> // Si e otra opción
+			System.err.println("ERROR: Opción no valida"); // Mostramos un mensaje de error
+		}
 	}
 
 }
