@@ -28,7 +28,7 @@ public class Ejercicio7 {
 		boolean esPrimo;
 		
 		//Recorremos desde el num hasta 1
-		for(int i = num; i>0; i--) {
+		for(int i = num; i>1; i--) {
 			//Si el modulo de num e i es 0
 			if (num%i == 0) {
 				//Llamamos a la función esPrimo con i como parametro
