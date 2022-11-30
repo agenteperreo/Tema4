@@ -8,7 +8,7 @@ public class Ejercicio5 {
 
 		// Generamos a numeros aleatorios
 		for (int i = 0; i < a; i++) {
-			System.out.println((int) (Math.random()+0.5));
+			System.out.printf("%.2f\n",(double) (Math.random()));
 		}
 
 	}
@@ -17,7 +17,7 @@ public class Ejercicio5 {
 
 		// Generamos a numeros aleatorios entre 0 y b
 		for (int i = 0; i < a; i++) {
-			System.out.println((int) (Math.random() * b));
+			System.out.println((int) (Math.random() * b)+1);
 		}
 
 	}
@@ -26,7 +26,7 @@ public class Ejercicio5 {
 
 		// Generamos a numeros aleatorios entre b y c
 		for (int i = 0; i < a; i++) {
-			System.out.println((int) (Math.random()*b-c+1)+c);
+			System.out.println((int) (Math.random()*(b-c+1)+c));
 		}
 
 	}
